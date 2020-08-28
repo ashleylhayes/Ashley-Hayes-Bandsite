@@ -1,4 +1,5 @@
-@import 'variables';
+@import './Partials/variables';
+@import "./Partials/mixins";
 
 @font-face {
     font-family: 'Avenir Next';
@@ -17,18 +18,17 @@
     font-weight: 700;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0 auto;
-}
-
+html,
 body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: $font-stack;
 }
 
 .header {
     background-color: #323232;
-    width: 100vw;
+    width: 100%;
     height: 25vw;
 }
 
@@ -39,7 +39,7 @@ body {
 .header__logo {
     display: block;
     margin: 0 auto;
-    padding: 16px 0;
+    padding: 5vw 0;
 }
 
 .header__nav-list {
@@ -47,13 +47,14 @@ body {
     justify-content: space-around;
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 .header__list-item {
     font-size: 0.9rem;
     text-align: center;
     width: 50vw;
-    padding-bottom: 8px;
+    padding-bottom: 2.5vw;
     margin: 0;
 }
 
@@ -69,23 +70,26 @@ body {
 }
 
 .hero {
-    width: 100vw;
-    height: 57vw;
+    width: 100%;
+    height: 57.1875vw;
 }
 
-.hero__img {
-    width: 100vw;
-    height: 57vw;
+.hero__img-container {
+    width: 100%;
+    height: 100%;
+    background-image: url(../Assets/Images/album-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .hero__overlay {
-    width: 100vw;
-    height: 57vw;
+    width: 100%;
+    height: 100%;
     background-color: rgba(50,50,50,.50);
     position: absolute;
-    top: 80px;
-    display: flex;
-    align-items: center;
 }
 
 .hero__text {
@@ -93,7 +97,8 @@ body {
     font-weight: 700;
     font-size: 1.5rem;
     width: 215px;
-    margin-left: 16px;
+    margin-left: 5vw;
+    z-index: 1;
 }
 
 .main {
@@ -104,25 +109,25 @@ body {
     color: #323232;
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 32px 0px 24px 16px;
+    margin: 10vw 0 7.5vw 5vw;
 }
 
 .main__img {
     width: 90vw;
-    margin: 0 16px;
+    margin: 0 5vw;
 }
 
 .main__quote {
     color: #323232;
     font-size: 1rem;
     font-weight: 600;
-    margin: 24px 16px 32px 16px;
+    margin: 7.5vw 5vw 10vw 5vw;
 }
 
 .main__quote-credit {
     color: #323232;
     font-size: 0.85rem;
-    margin: 0 16px 40px 16px;
+    margin: 0 5vw 12.5vw 5vw;
     font-weight: 600;
 }
 
@@ -130,19 +135,19 @@ body {
     color: #323232;
     font-size: 1rem;
     font-weight: 600;
-    margin: 0 16px 24px 16px;
+    margin: 0 5vw 7.5vw 5vw;
 }
 
 .main__about-1 {
     color: #323232;
     font-size: 0.75rem;
-    margin: 0 16px 24px 16px;
+    margin: 0 5vw 7.5vw 5vw;
 }
 
 .main__about-2 {
     color: #323232;
     font-size: 0.75rem;
-    margin: 0 16px 40px 16px;
+    margin: 0 5vw 12.5vw 5vw;
 }
 
 .photo__gallery {
@@ -153,7 +158,7 @@ body {
     color: #323232;
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 32px 0px 24px 16px;
+    margin: 10vw 0 7.5vw 5vw;
 }
 
 .photo-gallery__container {
@@ -163,5 +168,5 @@ body {
 
 .photo-gallery__img {
     width: 90vw;
-    margin: 0 16px 16px 16px;
+    margin: 0 5vw 5vw 5vw;
 }
