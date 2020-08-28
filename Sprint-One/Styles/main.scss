@@ -170,3 +170,69 @@ body {
     width: 90vw;
     margin: 0 5vw 5vw 5vw;
 }
+
+.footer {
+    width: 100vw;
+    background-color: #323232;
+    color: #FFFFFF;
+    margin: 7.5vw 0 0 0;
+}
+
+.footer__social {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__social-title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin: 12.5vw 0 10vw 3vw;
+}
+
+.footer__social-icons {
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 5vw 5vw;
+}
+
+.footer__social-logo {
+    display: none;
+}
+
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    margin: 5vw 0 5vw 3vw;
+}
+
+.footer__contact-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.footer__contact-company {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0.5vw 0 7.5vw 0;
+}
+
+.footer__contact-info {
+    font-size: 0.8rem;
+    margin: 0 0 0.5vw 0;
+}
+
+.footer__contact-email {
+    font-size: 0.8rem;
+    margin: 7.5vw 0 5vw 0;
+}
+
+.footer__copyright {
+    font-size: 0.8rem;
+    padding: 2.5vw 0 12.5vw 3vw;
+}
+
+.footer__copyright-info {
+    margin: 0.5vw 0 0.5vw 0;
+}
