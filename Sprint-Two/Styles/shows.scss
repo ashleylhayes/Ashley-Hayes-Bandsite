@@ -138,8 +138,8 @@ body {
     &__text {
         color: $secondary-color;
         font-weight: 600;
-        font-size: 0.8rem;
-        padding: 64px 0 0 0;
+        font-size: 0.9rem;
+        padding: 60px 0 0 0;
         margin: 0 0 0 $mobile-margin;
         z-index: 1;
     }
@@ -147,10 +147,10 @@ body {
     &__text-large {
         color: $secondary-color;
         font-weight: 700;
-        font-size: 2.1rem;
+        font-size: 2.25rem;
         width: 290px;
-        margin-left: $mobile-margin;
-        line-height: 1.5;
+        margin: 13px 0 50px $mobile-margin;
+        line-height: 1.35;
         z-index: 1;
 
         @include tablet {
@@ -168,8 +168,12 @@ body {
     }
 
     &__soundcloud {
-        height: 25%;
-        width: 100%;
+        width: 90vw;
+        margin: 0 $mobile-margin 0 $mobile-margin;
         z-index: 1;
+    }
+
+    &__soundcloud iframe {
+        height: 100px;
     }
 }
