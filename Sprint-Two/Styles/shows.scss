@@ -177,3 +177,151 @@ body {
         height: 100px;
     }
 }
+
+.footer {
+    width: 100vw;
+    background-color: $primary-color;
+    color: $secondary-color;
+    margin: 0;
+
+    &__social {
+        display: flex;
+        flex-direction: column;
+
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__social-title {
+        font-size: 2.3rem;
+        font-weight: 700;
+        margin: 12.5vw 0 32px 3vw;
+
+        @include tablet {
+            margin: 38px 0 33px $tablet-margin;
+        }
+
+        @include desktop {
+            margin: 48px 0 3.8889vw $desktop-margin;
+        }
+    }
+
+    &__social-icons {
+        width: 40vw;
+        height: 25px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 5vw 5vw;
+
+        @include tablet {
+            width: 17vw;
+            margin: 55px 0 0 0;
+        }
+
+        @include desktop {
+            width: 9vw;
+            margin: 66px 0 0 0;
+        }
+    }
+
+    &__social-logo {
+        display: none;
+
+        @include tablet {
+            display: flex;
+            margin: 10px $tablet-margin 0 20vw;
+        }
+
+        @include desktop {
+            margin: 0 $desktop-margin 0 28vw;
+        }
+    }
+
+    &__contact-container {
+        width: 100vw;
+
+        @include tablet {
+            display: flex;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        margin: 16px 0 16px $tablet-margin;
+    }
+
+    &__contact-tablet {
+        @include tablet {
+            margin: 16px 28px 16px 38px;
+        }
+    }
+
+    &__contact-desktop {
+        @include desktop {
+            margin: 16px 16px 16px $desktop-margin;
+        }
+    }
+
+    &__contact-name {
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin: 0;
+
+        @include tablet {
+            font-size: 1rem;
+        }
+    }
+
+    &__contact-company {
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin: 1.5px 0 24px 0;
+
+        @include tablet {
+            font-size: 1rem;
+        }
+    }
+
+    &__contact-info {
+        font-size: 0.8rem;
+        margin: 0 0 1.5px 0;
+
+        @include tablet {
+            font-size: 0.9rem;
+        }
+    }
+
+    &__contact-email {
+        font-size: 0.8rem;
+        margin: 24px 0 16px 0;
+
+        @include tablet {
+            font-size: 0.9rem;
+        }
+    }
+
+    &__copyright {
+        font-size: 0.8rem;
+        padding: 8px 0 40px $tablet-margin;
+
+        @include tablet {
+            display: flex;
+            font-size: 0.9rem;
+        }
+
+        @include desktop {
+            padding: 8px 0 40px $desktop-margin;
+        }
+    }
+
+    &__copyright-info {
+        margin: 1.5px 0 0.5vw 0;
+
+        @include tablet {
+            margin: 1.5px 5px 0.5vw 0;
+        }
+    }
+}
