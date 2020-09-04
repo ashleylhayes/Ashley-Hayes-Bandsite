@@ -352,6 +352,58 @@ body {
     }
 }
 
+.comments {
+    width: 100vw;
+
+    &__title {
+        @extend .gallery__title;
+        margin: 0 0 7vw 0;
+    }
+
+
+    label {
+        display: block;
+        color: #AFAFAF;
+        font-weight: 600;
+        margin-left: 80px;
+    }
+
+    input[name="name"] {
+        border: solid #000000 3px;
+        border-radius: 5px;
+        width: 202px;
+        height: 30px;
+        padding: 10px 0 10px 16px;
+        margin: 5px 16px 24px 80px;
+    }
+
+    input[name="comment"] {
+        width: 206px;
+        height: 90px;
+        border: solid #E1E1E1 1px;
+        border-radius: 5px;
+        background-color: #FAFAFA;
+        padding: 0 0 30px 16px;
+        margin: 5px 16px 0 80px;
+    }
+
+    ::placeholder {
+        font-family: 'Avenir Next';
+        font-size: 1rem;
+        color: #323232;    
+    }
+
+    &__button {
+        color: #FAFAFA;
+        font-weight: 600;
+        background-color: $primary-color;
+        width: 224px;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        margin: 16px 16px 32px 80px;
+    }
+}
 .footer {
     width: 100vw;
     background-color: $primary-color;

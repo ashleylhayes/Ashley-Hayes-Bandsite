@@ -370,7 +370,7 @@ body {
   background-color: #FAFAFA;
 }
 
-.gallery__title {
+.gallery__title, .comments__title {
   color: #323232;
   font-size: 1.5rem;
   font-weight: 700;
@@ -379,7 +379,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .gallery__title {
+  .gallery__title, .comments__title {
     font-size: 2.2rem;
     padding: 6vw 0 2vw 3.125vw;
     margin: 6vw 0 1.5vw 0;
@@ -387,7 +387,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .gallery__title {
+  .gallery__title, .comments__title {
     padding: 3.3333vw 0 2.7778vw 12.5vw;
     margin: 3.3333vw 0 0 0;
   }
@@ -440,6 +440,75 @@ body {
     width: 23.8889vw;
     padding: 0 0 1.6667vw 1.6667vw;
   }
+}
+
+.comments {
+  width: 100vw;
+}
+
+.comments__title {
+  margin: 0 0 7vw 0;
+}
+
+.comments label {
+  display: block;
+  color: #AFAFAF;
+  font-weight: 600;
+  margin-left: 80px;
+}
+
+.comments input[name="name"] {
+  border: solid #000000 3px;
+  border-radius: 5px;
+  width: 202px;
+  height: 30px;
+  padding: 10px 0 10px 16px;
+  margin: 5px 16px 24px 80px;
+}
+
+.comments input[name="comment"] {
+  width: 206px;
+  height: 90px;
+  border: solid #E1E1E1 1px;
+  border-radius: 5px;
+  background-color: #FAFAFA;
+  padding: 0 0 30px 16px;
+  margin: 5px 16px 0 80px;
+}
+
+.comments ::-webkit-input-placeholder {
+  font-family: 'Avenir Next';
+  font-size: 1rem;
+  color: #323232;
+}
+
+.comments :-ms-input-placeholder {
+  font-family: 'Avenir Next';
+  font-size: 1rem;
+  color: #323232;
+}
+
+.comments ::-ms-input-placeholder {
+  font-family: 'Avenir Next';
+  font-size: 1rem;
+  color: #323232;
+}
+
+.comments ::placeholder {
+  font-family: 'Avenir Next';
+  font-size: 1rem;
+  color: #323232;
+}
+
+.comments__button {
+  color: #FAFAFA;
+  font-weight: 600;
+  background-color: #323232;
+  width: 224px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  margin: 16px 16px 32px 80px;
 }
 
 .footer {
@@ -644,4 +713,4 @@ body {
     margin: 1.5px 5px 0.5vw 0;
   }
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */ */
