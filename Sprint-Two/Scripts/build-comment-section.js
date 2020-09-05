@@ -1,6 +1,6 @@
 //create comment container
 let commentContainer1 = document.createElement('div');
-//gave comment container class name
+//give comment container class name
 commentContainer1.className = "comments__comment-container-1";
 //append comment container to comments section
 document.querySelector('.comments').appendChild(commentContainer1);
