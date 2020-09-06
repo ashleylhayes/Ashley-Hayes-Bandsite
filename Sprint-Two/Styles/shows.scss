@@ -89,7 +89,7 @@ body {
         @include desktop {
             width: 80px;
             padding-bottom: 28px;
-            margin: 0 0 0 3.8889vw;
+            margin: 0 0 0 1vw;
         }
     }
 
@@ -100,6 +100,10 @@ body {
 
         @include tablet {
             margin: 0 0 0 7.5vw;
+
+            @include desktop {
+                margin: 0 0 0 3vw;
+            }
         }
     }
 
@@ -118,7 +122,7 @@ body {
     }
 
     @include desktop {
-        height: 46.5278vw;
+        height: 670px;
     }
 
     &__img-container {
@@ -153,6 +157,12 @@ body {
             font-weight: 700;
             padding: 96px 0 20px 0;
         }
+
+        @include desktop {
+            font-size: 1.3rem;
+            margin-left: $desktop-margin;
+            padding: 160px 0 20px 0;
+        }
     }
 
     &__text-large {
@@ -174,6 +184,8 @@ body {
         @include desktop {
             margin-left: $desktop-margin;
             line-height: 1.4;
+            font-size: 3.2rem;
+            width: 500px;
 
         }
     }
@@ -188,6 +200,14 @@ body {
             margin: 0 0 0 $tablet-margin;
             z-index: 1;
         }
+
+        @include desktop {
+            position: absolute;
+            right: $desktop-margin;
+            bottom: 265px;
+            width: 30.2778vw;
+            z-index: 1;
+        }
     }
 
     &__soundcloud iframe {
@@ -196,13 +216,22 @@ body {
         @include tablet {
             height: 150px;
         }
+
+        @include desktop {
+            height: 10.1389vw;
+            max-height: 146px;
+        }
     }
 }
 
 .shows {
-    width: 100vw;
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
+
+    @include desktop {
+        margin: 0 $desktop-margin 0 $desktop-margin;
+    }
 
     &__title {
         color: $primary-color;
@@ -214,6 +243,12 @@ body {
         @include tablet {
             font-size: 2.2rem;
             padding: 46px 0 0 $tablet-margin;
+        }
+
+        @include desktop {
+            position: absolute;
+            width: 150px;
+            padding: 48px 0 0 0;
         }
     }
 
@@ -232,6 +267,12 @@ body {
             align-items: center;
             margin: 0 3.125vw 0 3.125vw;
         }
+
+        @include desktop {
+            width: 55.8334vw;
+            margin: 0;
+            align-self: flex-end;
+        }
     }
 
     &__date-title {
@@ -242,7 +283,11 @@ body {
 
         @include tablet {
             order: -1;
-            width: 26.6928vw;
+            width: 25%;
+        }
+
+        @include desktop {
+            padding-top: 48px;
         }
     }
 
@@ -254,7 +299,7 @@ body {
 
         @include tablet {
             font-size: 1rem;
-            width: 26.6928vw;
+            width: 25%;
         }
     }
 
@@ -262,7 +307,7 @@ body {
         @extend .shows__date-title;
 
         @include tablet {
-            width: 22.1355vw;
+            width: 25%;
         }
     }
 
@@ -273,7 +318,7 @@ body {
 
         @include tablet {
             font-size: 0.9rem;
-            width: 22.1355vw;
+            width: 25%;
         }
     }
 
@@ -281,7 +326,7 @@ body {
         @extend .shows__date-title;
 
         @include tablet {
-            width: 44.9219vw;
+            width: 50%;
         }
     }
 
@@ -289,8 +334,7 @@ body {
         @extend .shows__venue;
 
         @include tablet {
-            width: 23.8281vw;
-
+            width: 25%;
         }
     }
 
@@ -306,7 +350,11 @@ body {
 
         @include tablet {
             width: 160px;
-            margin: 16px 0 16px 0;
+            margin: 16px 0 16px 2.7778%;
+        }
+
+        @include desktop {
+            margin: 16px 0 16px 1%;
         }
     }
 

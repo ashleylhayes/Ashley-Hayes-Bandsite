@@ -266,7 +266,7 @@ buyButton6.innerText = "BUY TICKETS";
 document.querySelector('.shows__container-6').appendChild(buyButton6);
 
 
-// let show = [showsContainer1.innerText, dateTitle1, date1, venueTitle1, venue1, locationTitle1, location1, buyButton1];
+// let show = [showsContainer1, dateTitle1, date1, venueTitle1, venue1, locationTitle1, location1, buyButton1];
 // console.log(show);
 
 // document.querySelector('.shows').append(show);
