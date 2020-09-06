@@ -45,7 +45,7 @@ body {
         margin: 16px auto 0 auto;
 
         @include tablet {
-            margin: auto 77px auto $tablet-margin;
+            margin: auto 10vw auto $tablet-margin;
         }
 
         @include desktop {
@@ -77,7 +77,7 @@ body {
         margin: 0;
 
         &:hover {
-            background-color: #7B6589;
+            background-color: #A54EFF;
         }
 
         @include tablet {
@@ -96,7 +96,11 @@ body {
     &__list-item--active {
         font-weight: 600;
         border-bottom: solid 3px $secondary-color;
-        margin-left: 40px;
+        margin: 0;
+
+        @include tablet {
+            margin: 0 0 0 7.5vw;
+        }
     }
 
     &__link {
@@ -139,7 +143,7 @@ body {
         color: $secondary-color;
         font-weight: 600;
         font-size: 0.9rem;
-        padding: 60px 0 0 0;
+        padding: 60px 0 20px 0;
         margin: 0 0 0 $mobile-margin;
         z-index: 1;
 
@@ -147,6 +151,7 @@ body {
             margin: 0 0 0 $tablet-margin;
             font-size: 1.5rem;
             font-weight: 700;
+            padding: 96px 0 20px 0;
         }
     }
 
@@ -155,7 +160,7 @@ body {
         font-weight: 700;
         font-size: 2.25rem;
         width: 290px;
-        margin: 13px 0 50px $mobile-margin;
+        margin: 0 0 50px $mobile-margin;
         line-height: 1.35;
         z-index: 1;
 
@@ -205,14 +210,28 @@ body {
         font-weight: 700;
         margin: 0 0 32px 0;
         padding: 10vw 0 0 $mobile-margin;
+
+        @include tablet {
+            font-size: 2.2rem;
+            padding: 46px 0 0 $tablet-margin;
+        }
     }
 
     &__container-1 {
-        width: 288px;
+        width: 90vw;
         display: flex;
         flex-direction: column;
         margin: 0 5vw 0 5vw;
         border-bottom: 1px solid #E1E1E1;
+
+        @include tablet {
+            width: 93.75vw;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 3.125vw 0 3.125vw;
+        }
     }
 
     &__date-title {
@@ -220,6 +239,11 @@ body {
         font-size: 0.8rem;
         font-weight: 600;
         margin: 0;
+
+        @include tablet {
+            order: -1;
+            width: 26.6928vw;
+        }
     }
 
     &__date {
@@ -227,40 +251,72 @@ body {
         font-size: 0.9rem;
         font-weight: 600;
         margin: 10px 0 16px 0;
+
+        @include tablet {
+            font-size: 1rem;
+            width: 26.6928vw;
+        }
     }
 
     &__venue-title {
         @extend .shows__date-title;
+
+        @include tablet {
+            width: 22.1355vw;
+        }
     }
 
     &__venue {
         font-size: 0.8rem;
         color: $primary-color;
         margin: 10px 0 16px 0;
+
+        @include tablet {
+            font-size: 0.9rem;
+            width: 22.1355vw;
+        }
     }
 
     &__location-title {
         @extend .shows__date-title;
+
+        @include tablet {
+            width: 44.9219vw;
+        }
     }
 
     &__location {
         @extend .shows__venue;
+
+        @include tablet {
+            width: 23.8281vw;
+
+        }
     }
 
     &__button {
         color: #FAFAFA;
         font-weight: 600;
         background-color: $primary-color;
-        width: 288px;
+        width: 90vw;
         height: 48px;
         border: none;
         border-radius: 5px;
         margin: 10px 0 16px 0;
+
+        @include tablet {
+            width: 160px;
+            margin: 16px 0 16px 0;
+        }
     }
 
     &__container-2 {
       @extend .shows__container-1;
       padding-top: 24px;
+
+      @include tablet {
+          padding-top: 0;
+      }
     }
 
     &__container-3 {
@@ -277,6 +333,12 @@ body {
 
     &__container-6 {
         @extend .shows__container-2;
+    }
+
+    &__title-tablet {
+        @include tablet {
+            display: none;
+        }
     }
 }
 

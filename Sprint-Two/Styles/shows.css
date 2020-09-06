@@ -57,7 +57,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .header__logo {
-    margin: auto 77px auto 3.125vw;
+    margin: auto 10vw auto 3.125vw;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -90,7 +90,7 @@ body {
   margin: 0;
 }
 .header__list-item:hover {
-  background-color: #7B6589;
+  background-color: #A54EFF;
 }
 @media screen and (min-width: 768px) {
   .header__list-item {
@@ -109,7 +109,12 @@ body {
 .header__list-item--active {
   font-weight: 600;
   border-bottom: solid 3px #FFFFFF;
-  margin-left: 40px;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .header__list-item--active {
+    margin: 0 0 0 7.5vw;
+  }
 }
 .header__link {
   color: #E1E1E1;
@@ -155,7 +160,7 @@ body {
   color: #FFFFFF;
   font-weight: 600;
   font-size: 0.9rem;
-  padding: 60px 0 0 0;
+  padding: 60px 0 20px 0;
   margin: 0 0 0 5vw;
   z-index: 1;
 }
@@ -164,6 +169,7 @@ body {
     margin: 0 0 0 3.125vw;
     font-size: 1.5rem;
     font-weight: 700;
+    padding: 96px 0 20px 0;
   }
 }
 .hero__text-large {
@@ -171,7 +177,7 @@ body {
   font-weight: 700;
   font-size: 2.25rem;
   width: 290px;
-  margin: 13px 0 50px 5vw;
+  margin: 0 0 50px 5vw;
   line-height: 1.35;
   z-index: 1;
 }
@@ -227,8 +233,14 @@ body {
   margin: 0 0 32px 0;
   padding: 10vw 0 0 5vw;
 }
+@media screen and (min-width: 768px) {
+  .shows__title {
+    font-size: 2.2rem;
+    padding: 46px 0 0 3.125vw;
+  }
+}
 .shows__container-1, .shows__container-2, .shows__container-6, .shows__container-5, .shows__container-4, .shows__container-3 {
-  width: 288px;
+  width: 90vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,11 +251,37 @@ body {
   margin: 0 5vw 0 5vw;
   border-bottom: 1px solid #E1E1E1;
 }
+@media screen and (min-width: 768px) {
+  .shows__container-1, .shows__container-2, .shows__container-6, .shows__container-5, .shows__container-4, .shows__container-3 {
+    width: 93.75vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 3.125vw 0 3.125vw;
+  }
+}
 .shows__date-title, .shows__location-title, .shows__venue-title {
   color: #AFAFAF;
   font-size: 0.8rem;
   font-weight: 600;
   margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .shows__date-title, .shows__location-title, .shows__venue-title {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 26.6928vw;
+  }
 }
 .shows__date {
   color: #323232;
@@ -251,24 +289,68 @@ body {
   font-weight: 600;
   margin: 10px 0 16px 0;
 }
+@media screen and (min-width: 768px) {
+  .shows__date {
+    font-size: 1rem;
+    width: 26.6928vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .shows__venue-title {
+    width: 22.1355vw;
+  }
+}
 .shows__venue, .shows__location {
   font-size: 0.8rem;
   color: #323232;
   margin: 10px 0 16px 0;
 }
+@media screen and (min-width: 768px) {
+  .shows__venue, .shows__location {
+    font-size: 0.9rem;
+    width: 22.1355vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .shows__location-title {
+    width: 44.9219vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .shows__location {
+    width: 23.8281vw;
+  }
+}
 .shows__button {
   color: #FAFAFA;
   font-weight: 600;
   background-color: #323232;
-  width: 288px;
+  width: 90vw;
   height: 48px;
   border: none;
   border-radius: 5px;
   margin: 10px 0 16px 0;
 }
+@media screen and (min-width: 768px) {
+  .shows__button {
+    width: 160px;
+    margin: 16px 0 16px 0;
+  }
+}
 .shows__container-2, .shows__container-6, .shows__container-5, .shows__container-4, .shows__container-3 {
   padding-top: 24px;
 }
+@media screen and (min-width: 768px) {
+  .shows__container-2, .shows__container-6, .shows__container-5, .shows__container-4, .shows__container-3 {
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .shows__title-tablet {
+    display: none;
+  }
+}
+
 .footer {
   width: 100vw;
   background-color: #323232;
@@ -442,7 +524,8 @@ body {
     margin: 1.5px 5px 0.5vw 0;
   }
 }
-/*# sourceMappingURL=shows.css.map */in: 1.5px 5px 0.5vw 0;
+/*# sourceMappingURL=shows.css.map */ {
+    margin: 1.5px 5px 0.5vw 0;
   }
 }
 /*# sourceMappingURL=shows.css.map */

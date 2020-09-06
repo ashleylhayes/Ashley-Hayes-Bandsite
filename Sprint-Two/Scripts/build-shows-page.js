@@ -59,7 +59,7 @@ showsContainer2.className = "shows__container-2";
 document.querySelector('.shows').appendChild(showsContainer2);
 
 let dateTitle2 = document.createElement('p');
-dateTitle2.className = "shows__date-title";
+dateTitle2.className = "shows__date-title shows__title-tablet";
 dateTitle2.innerText = "DATE";
 document.querySelector('.shows__container-2').appendChild(dateTitle2);
 
@@ -69,7 +69,7 @@ date2.innerText = "Tue Jul 18 2019";
 document.querySelector('.shows__container-2').appendChild(date2);
 
 let venueTitle2 = document.createElement('p');
-venueTitle2.className = "shows__venue-title";
+venueTitle2.className = "shows__venue-title shows__title-tablet";
 venueTitle2.innerText = "VENUE";
 document.querySelector('.shows__container-2').appendChild(venueTitle2);
 
@@ -79,7 +79,7 @@ venue2.innerText = "Pier 3 East";
 document.querySelector('.shows__container-2').appendChild(venue2);
 
 let locationTitle2 = document.createElement('p');
-locationTitle2.className = "shows__location-title";
+locationTitle2.className = "shows__location-title shows__title-tablet";
 locationTitle2.innerText = "LOCATION";
 document.querySelector('.shows__container-2').appendChild(locationTitle2);
 
@@ -102,7 +102,7 @@ showsContainer3.className = "shows__container-3";
 document.querySelector('.shows').appendChild(showsContainer3);
 
 let dateTitle3 = document.createElement('p');
-dateTitle3.className = "shows__date-title";
+dateTitle3.className = "shows__date-title shows__title-tablet";
 dateTitle3.innerText = "DATE";
 document.querySelector('.shows__container-3').appendChild(dateTitle3);
 
@@ -112,7 +112,7 @@ date3.innerText = "Fri Jul 22 2019";
 document.querySelector('.shows__container-3').appendChild(date3);
 
 let venueTitle3 = document.createElement('p');
-venueTitle3.className = "shows__venue-title";
+venueTitle3.className = "shows__venue-title shows__title-tablet";
 venueTitle3.innerText = "VENUE";
 document.querySelector('.shows__container-3').appendChild(venueTitle3);
 
@@ -122,7 +122,7 @@ venue3.innerText = "View Loungue";
 document.querySelector('.shows__container-3').appendChild(venue3);
 
 let locationTitle3 = document.createElement('p');
-locationTitle3.className = "shows__location-title";
+locationTitle3.className = "shows__location-title shows__title-tablet";
 locationTitle3.innerText = "LOCATION";
 document.querySelector('.shows__container-3').appendChild(locationTitle3);
 
@@ -145,7 +145,7 @@ showsContainer4.className = "shows__container-4";
 document.querySelector('.shows').appendChild(showsContainer4);
 
 let dateTitle4 = document.createElement('p');
-dateTitle4.className = "shows__date-title";
+dateTitle4.className = "shows__date-title shows__title-tablet";
 dateTitle4.innerText = "DATE";
 document.querySelector('.shows__container-4').appendChild(dateTitle4);
 
@@ -155,7 +155,7 @@ date4.innerText = "Sat Aug 12 2019";
 document.querySelector('.shows__container-4').appendChild(date4);
 
 let venueTitle4 = document.createElement('p');
-venueTitle4.className = "shows__venue-title";
+venueTitle4.className = "shows__venue-title shows__title-tablet";
 venueTitle4.innerText = "VENUE";
 document.querySelector('.shows__container-4').appendChild(venueTitle4);
 
@@ -165,7 +165,7 @@ venue4.innerText = "Hyatt Agency";
 document.querySelector('.shows__container-4').appendChild(venue4);
 
 let locationTitle4 = document.createElement('p');
-locationTitle4.className = "shows__location-title";
+locationTitle4.className = "shows__location-title shows__title-tablet";
 locationTitle4.innerText = "LOCATION";
 document.querySelector('.shows__container-4').appendChild(locationTitle4);
 
@@ -188,7 +188,7 @@ showsContainer5.className = "shows__container-5";
 document.querySelector('.shows').appendChild(showsContainer5);
 
 let dateTitle5 = document.createElement('p');
-dateTitle5.className = "shows__date-title";
+dateTitle5.className = "shows__date-title shows__title-tablet";
 dateTitle5.innerText = "DATE";
 document.querySelector('.shows__container-5').appendChild(dateTitle5);
 
@@ -198,7 +198,7 @@ date5.innerText = "Fri Sep 5 2019";
 document.querySelector('.shows__container-5').appendChild(date5);
 
 let venueTitle5 = document.createElement('p');
-venueTitle5.className = "shows__venue-title";
+venueTitle5.className = "shows__venue-title shows__title-tablet";
 venueTitle5.innerText = "VENUE";
 document.querySelector('.shows__container-5').appendChild(venueTitle5);
 
@@ -208,7 +208,7 @@ venue5.innerText = "Moscow Center";
 document.querySelector('.shows__container-5').appendChild(venue5);
 
 let locationTitle5 = document.createElement('p');
-locationTitle5.className = "shows__location-title";
+locationTitle5.className = "shows__location-title shows__title-tablet";
 locationTitle5.innerText = "LOCATION";
 document.querySelector('.shows__container-5').appendChild(locationTitle5);
 
@@ -231,7 +231,7 @@ showsContainer6.className = "shows__container-6";
 document.querySelector('.shows').appendChild(showsContainer6);
 
 let dateTitle6 = document.createElement('p');
-dateTitle6.className = "shows__date-title";
+dateTitle6.className = "shows__date-title shows__title-tablet";
 dateTitle6.innerText = "DATE";
 document.querySelector('.shows__container-6').appendChild(dateTitle6);
 
@@ -241,7 +241,7 @@ date6.innerText = "Wed Aug 11 2019";
 document.querySelector('.shows__container-6').appendChild(date6);
 
 let venueTitle6 = document.createElement('p');
-venueTitle6.className = "shows__venue-title";
+venueTitle6.className = "shows__venue-title shows__title-tablet";
 venueTitle6.innerText = "VENUE";
 document.querySelector('.shows__container-6').appendChild(venueTitle6);
 
@@ -251,7 +251,7 @@ venue6.innerText = "Pres Club";
 document.querySelector('.shows__container-6').appendChild(venue6);
 
 let locationTitle6 = document.createElement('p');
-locationTitle6.className = "shows__location-title";
+locationTitle6.className = "shows__location-title shows__title-tablet";
 locationTitle6.innerText = "LOCATION";
 document.querySelector('.shows__container-6').appendChild(locationTitle6);
 
@@ -264,3 +264,9 @@ let buyButton6 = document.createElement('button');
 buyButton6.className = "shows__button";
 buyButton6.innerText = "BUY TICKETS";
 document.querySelector('.shows__container-6').appendChild(buyButton6);
+
+
+// let show = [showsContainer1.innerText, dateTitle1, date1, venueTitle1, venue1, locationTitle1, location1, buyButton1];
+// console.log(show);
+
+// document.querySelector('.shows').append(show);
