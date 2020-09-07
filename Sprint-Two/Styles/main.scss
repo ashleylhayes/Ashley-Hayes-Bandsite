@@ -363,6 +363,14 @@ body {
     &__form-container {
         display: flex;
         margin: 0 5vw 0 25vw;
+
+        @include tablet {
+            margin: 0 16.2761vw 0 24.7396vw;
+        }
+
+        @include desktop {
+            margin: 0 21.6667vw 0 37vw;
+        }
     }
 
     label {
@@ -382,6 +390,14 @@ body {
         position: absolute;
         left: 16px;
         margin-top: 5px;
+
+        @include tablet {
+            left: 16.2761vw;
+        }
+
+        @include desktop {
+            left: 31.6667vw;
+        }
     }
 
     input {
@@ -391,6 +407,14 @@ body {
         height: 30px;
         padding: 7px 0 7px 16px;
         margin: 5px 0 16px 0;
+
+        @include tablet {
+            width: 56.3803vw;
+        }
+
+        @include desktop {
+            width: 30vw;
+        }
     }
 
     textarea {
@@ -402,12 +426,20 @@ body {
         padding: 16px 0 0 16px;
         resize: none;
         margin: 5px 0 16px 0;
+
+        @include tablet {
+            width: 56.6407vw;
+        }
+
+        @include desktop {
+            width: 30vw;
+        }
     }
 
     ::placeholder {
         font-family: 'Avenir Next';
         font-size: 0.9rem;
-        color: #323232;
+        color: $primary-color;
     }
 
     &__button {
@@ -419,6 +451,15 @@ body {
         border: none;
         border-radius: 5px;
         margin-bottom: 32px;
+
+        @include tablet {
+            width: 160px;
+            margin-left: 38.1511vw;
+        }
+        
+        @include desktop {
+            margin-left: 18.3334vw;
+        }
     }
 
     &__comment-container-1 {
@@ -428,6 +469,14 @@ body {
         border-top: 1px solid #E1E1E1;
         border-bottom: 1px solid #E1E1E1;
         margin: 0 5vw 0 5vw;
+
+        @include tablet {
+            margin: 0 16.2761vw 0 16.2761vw;
+        }
+
+        @include desktop {
+            margin: 0 31.6667vw 0 31.6667vw;
+        }
     }
 
     &__avatar-container {
@@ -443,6 +492,11 @@ body {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+
+        @include tablet {
+            width: 90%;
+            justify-content: flex-start;
+        }
     }
 
     &__name {
@@ -450,18 +504,36 @@ body {
         color: $primary-color;
         font-weight: 600;
         margin: 26px 0 0 0;
+
+        @include tablet {
+            font-size: 1rem;
+        }
+
+        @include desktop {
+            margin-left: 16px;
+        }
     }
 
     &__timestamp {
         font-size: 0.9rem;
         color: #AFAFAF;
         margin: 26px 0 0 0;
+
+        @include tablet {
+            margin-left: 8px;
+        }
     }
 
     &__comment {
         font-size: 0.9rem;
         color: $primary-color;
         margin: 16px 0 24px 0;
+
+        @include tablet {
+            font-size: 0.88rem;
+        }
+
+        margin-left: 16px;
     }
 
     &__comment-container-2 {
@@ -481,6 +553,7 @@ body {
         @extend .comments__comment-info-container;
     }
 }
+
 .footer {
     width: 100vw;
     background-color: $primary-color;
