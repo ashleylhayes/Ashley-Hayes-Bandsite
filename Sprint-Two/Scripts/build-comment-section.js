@@ -102,3 +102,51 @@ let comment3 = document.createElement('p');
 comment3.className = "comments__comment";
 comment3.innerText = "How can someone be so good!!! You can tell he lives for this and loves to do it every day. Everytime I see him I feel instantly happy! He’s definitely my favorite ever!";
 document.querySelector('.comments__comment-info-container-3').appendChild(comment3);
+
+let postedComment1 = [commentName1.innerText, timestamp1.innerText, comment1.innerText];
+console.log(postedComment1);
+
+let postedComment2 = [commentName2.innerText, timestamp2.innerText, comment2.innerText];
+console.log(postedComment2);
+
+let postedComment3 = [commentName3.innerText, timestamp3.innerText, comment3.innerText];
+console.log(postedComment3);
+
+let postedComments = [postedComment1, postedComment2, postedComment3];
+console.log(postedComments);
+
+const datePosted = function(backslash){
+    today = new Date();
+    let dd = today.getDate();
+    let mm = today.getMonth()+1;
+    let yyyy = today.getFullYear();
+    
+    if(dd<10) dd='0'+dd;
+    if(mm<10) mm='0'+mm;
+    return (mm+backslash+dd+backslash+yyyy);
+    };
+    console.log(datePosted('/'));
+
+let submittedName = document.getElementsByClassName("comments__form-name");
+submittedComment.push(submittedName);
+
+let submittedText = document.getElementsByClassName("comments__form-text");
+submittedComment.push(submittedText);
+
+// let submittedComment = [SubmittedName, submittedText, datePosted];
+// console.log(submittedComment);
+
+let submittedComment = [];
+function displayComment(event) {
+    event.preventDefault();
+    submittedCommentName.getElementsByClassName("comments__form-name") = event.target.name.value;
+    submittedCommentComment.getElementsByClassName("comments__form-text") = event.target.comment.value;
+    datePosted('/');
+    postedComments.push(submittedComment);
+    submitForm.reset();
+};
+
+
+let form  = document.getElementById('commentsForm');
+form.addEventListener('submit', (event) => {
+});
