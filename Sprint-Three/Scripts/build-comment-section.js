@@ -1,4 +1,6 @@
-/////Comment Container
+/////Comments Container
+
+//this needs to go within a function
 let commentContainer1 = document.createElement('div');
 commentContainer1.classList = "comments__comment-container-1";
 document.querySelector('.comments').appendChild(commentContainer1);
@@ -27,6 +29,14 @@ comment1.innerText = "They BLEW the ROOF off at their last show, once everyone s
 document.querySelector('.comments__comment-info-container').appendChild(comment1);
 
 
+const COMMENTS_URL = "https://project-1-api.herokuapp.com/comments?api_key=";
+let API_KEY = "3830e1e5-4eb0-4af2-932f-4a78fede63c0";
+
+let getData = axios.get(COMMENTS_URL + API_KEY)
+.then(response => {
+    console.log(response)
+})
+.catch(error => console.log(error));
 
 let submittedComment = [
     {
@@ -47,15 +57,6 @@ let submittedComment = [
         comment: "How can someone be so good!!! You can tell he lives for this and loves to do it every day. Everytime I see him I feel instantly happy! He’s definitely my favorite ever!"
     }
 ];
-
-const COMMENTS_URL = "https://project-1-api.herokuapp.com/comments?api_key=";
-let API_KEY = "3830e1e5-4eb0-4af2-932f-4a78fede63c0";
-
-let getData = axios.get(COMMENTS_URL + API_KEY)
-.then(response => {
-    console.log(response)
-})
-.catch(error => console.log(error));
 
 
 let form  = document.getElementById('commentsForm');
@@ -85,6 +86,7 @@ function displayComment(event) {
     submitForm.reset();
 };
 
+//creating a div for the post to go into
 function createParentDiv() {
     let commentsPost = document.createElement('div');
     commentsPost.classList.add('comments__post');
@@ -92,6 +94,10 @@ function createParentDiv() {
     formReference.parentNode.insertBefore(commentsPost, formReference.nextElementSibling);
         displayComment();
 }
+//Invoke function
+createParentDiv();
+
+//document.querySelector(“Enter your parent container here”).innerHTML = “”;
 
 
 
