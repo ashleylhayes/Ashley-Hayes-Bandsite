@@ -12,8 +12,9 @@ document.querySelector('.shows').appendChild(showsTitle);
 
 let SHOWS_URL = "https://project-1-api.herokuapp.com/showdates?api_key=";
 let API_KEY = "3830e1e5-4eb0-4af2-932f-4a78fede63c0";
+let getData = SHOWS_URL + API_KEY;
 
-axios.get(SHOWS_URL + API_KEY)
+axios.get(getData)
 .then(response => {
     console.log(response)
 
