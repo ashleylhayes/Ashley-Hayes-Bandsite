@@ -366,8 +366,16 @@ body {
 
     &__title {
         @extend .gallery__title;
-        margin: 0 0 7vw 0;
+        margin: 0 0 40px $mobile-margin;
         padding: 32px 0 0 0;
+
+        @include tablet {
+            margin: 0 0 40px $tablet-margin;
+        }
+
+        @include desktop {
+            margin: 0 0 40px $desktop-margin;
+        }
     }
 
     &__form-container {
@@ -418,6 +426,7 @@ body {
         height: 30px;
         padding: 7px 0 7px 16px;
         margin: 5px 0 16px 0;
+        outline: none;
 
         @include tablet {
             width: 56.3803vw;
@@ -438,6 +447,7 @@ body {
         padding: 16px 0 0 16px;
         resize: none;
         margin: 5px 0 16px 0;
+        outline: none;
 
         @include tablet {
             width: 56.6407vw;
@@ -531,6 +541,7 @@ body {
         font-size: 0.9rem;
         color: $primary-color;
         margin: 16px 0 24px 0;
+        min-width: 230px;
 
         @include tablet {
             font-size: 0.88rem;
