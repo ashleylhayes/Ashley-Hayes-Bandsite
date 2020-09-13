@@ -58,8 +58,6 @@ function postComments() {
 
         })
         
-        .catch(error => console.log(error));
-
     });
 }
 
@@ -85,3 +83,10 @@ function formHandler(event) {
 
 //adding event listener for form submit
 form.addEventListener('submit', formHandler);
+
+
+
+
+// if (submittedComment.name && submittedComment.comment == "") {
+        
+//     return;
