@@ -243,12 +243,13 @@ body {
         @include tablet {
             font-size: 2.2rem;
             padding: 46px 0 0 $tablet-margin;
+            margin: 0;
         }
 
         @include desktop {
-            position: absolute;
             width: 150px;
-            padding: 48px 0 0 0;
+            padding: 48px 0 20px 0;
+            height: 35px;
         }
     }
 
@@ -270,8 +271,8 @@ body {
 
         @include desktop {
             width: 55.8334vw;
-            margin: 0;
             align-self: flex-end;
+            margin: 0 0 0 18.75vw;
         }
     }
 
@@ -285,10 +286,32 @@ body {
         @include tablet {
             order: -1;
             width: 25%;
+            display: none;
         }
 
         @include desktop {
             padding-top: 48px;
+        }
+    }
+
+    &__tablet-titles {
+        display: none;
+
+        @include tablet {
+            display: flex;
+            width: 55.3385vw;
+            justify-content: space-between;
+            color: #AFAFAF;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin: 0;
+            padding-top: 24px;
+        }
+
+        @include desktop {
+            margin-left: 18.75vw;
+            width: 33.3333vw;
+            padding: 0;
         }
     }
 

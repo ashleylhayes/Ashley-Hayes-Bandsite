@@ -58,10 +58,14 @@ function postComments() {
 
         })
         
-    });
+    })
+    
+    .catch(error => {
+        console.log(error)
+    })
 }
 
-postComments();
+postComments()
 
 //function to handle form submission
 function formHandler(event) {

@@ -1,14 +1,17 @@
 //create shows title
 let showsTitle = document.createElement('div');
 //assign class
-showsTitle.classList = "shows__title";
+showsTitle.classList.add("shows__title");
 //add content
 showsTitle.innerText = "Shows";
 //append
-document.querySelector('.shows').appendChild(showsTitle);
+document.querySelector('.shows').append(showsTitle);
 
-
-
+//create titles for tablet and desktop
+let tabletTitles = document.createElement('div');
+tabletTitles.classList.add("shows__tablet-titles");
+tabletTitles.innerHTML = `<p>DATES</p> <p>VENUE</p> <p>LOCATION</p>`;
+document.querySelector('.shows__title').appendChild(tabletTitles);
 
 let SHOWS_URL = "https://project-1-api.herokuapp.com/showdates?api_key=";
 let API_KEY = "3830e1e5-4eb0-4af2-932f-4a78fede63c0";
@@ -19,9 +22,7 @@ function createParentContainer() {
     showsPost.classList.add('shows__post');
     let Reference = document.querySelector('.shows__title');
     Reference.parentNode.insertBefore(showsPost, Reference.nextElementSibling);
-    }
-
-
+}
 
 axios.get(getData)
 .then(response => {
@@ -76,6 +77,6 @@ axios.get(getData)
     })
 
 })
-.catch(error => console.log(error));
-
-//Need to create a new version of date, venue, and location titles that will only display at the top for tablet and desktop breakpoints.
+.catch(error => {
+    console.log(error)
+})
